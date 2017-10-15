@@ -4,31 +4,30 @@
  * and imports for stencil collections that might be configured in your stencil.config.js file
  */
 
-import { MyName as MyName } from './components/my-name/my-name';
+import { QRCodeWebComponent as QrCode } from './components/qr-code/qr-code';
 
-interface HTMLMyNameElement extends MyName, HTMLElement {
+interface HTMLQrCodeElement extends QrCode, HTMLElement {
 }
-declare var HTMLMyNameElement: {
-  prototype: HTMLMyNameElement;
-  new (): HTMLMyNameElement;
+declare var HTMLQrCodeElement: {
+  prototype: HTMLQrCodeElement;
+  new (): HTMLQrCodeElement;
 };
 declare global {
   interface HTMLElementTagNameMap {
-      "my-name": HTMLMyNameElement;
+      "qr-code": HTMLQrCodeElement;
   }
   interface ElementTagNameMap {
-      "my-name": HTMLMyNameElement;
+      "qr-code": HTMLQrCodeElement;
   }
   namespace JSX {
       interface IntrinsicElements {
-          "my-name": JSXElements.MyNameAttributes;
+          "qr-code": JSXElements.QrCodeAttributes;
       }
   }
   namespace JSXElements {
-      export interface MyNameAttributes extends HTMLAttributes {
+      export interface QrCodeAttributes extends HTMLAttributes {
         
-          first?: any,
-          last?: any
+          contents?: string
       }
   }
 }

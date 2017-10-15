@@ -1,8 +1,8 @@
 exports.config = {
-  namespace: 'myname',
+  namespace: 'qrcode',
   generateDistribution: true,
   bundles: [
-    { components: ['my-name'] }
+    { components: ['qr-code'] }
   ]
 };
 
