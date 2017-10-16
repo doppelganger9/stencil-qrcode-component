@@ -5,12 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <title>Stencil Component Starter</title>
   <script src="/build/qrcode.js"></script>
+  <!-- TODO: find a way to remove this script dependency and move it to the web-component if possible? -->
   <script src="/assets/node-qrcode/qrcode.js"></script>
+  <script>
+    // For demo purposes, to show usage of props change
+    const refresh = () => Array.from(document.getElementsByTagName('qr-code')).map(e => {
+        e.contents = document.getElementById('dyn_content').value
+    });
+  </script>
+  <style>
+    /* sample styling override to add a border with rounded corner */
+    .with-rounded-corners {
+        border: 3px solid black;
+        border-radius:10px;
+    }
+    .with-rounded-corners div, .with-rounded-corners div svg, .with-rounded-corners img {
+        border-radius:5px;
+    }
+  </style>
 
 </head>
-<body>
 
-  <qr-code contents="Hello World"></qr-code>
+  <h1>QR Code web-component demo</h1>
+  <label for="dyn_content">Change the contents of the QR Code here :</label>
+  <input name="dyn_content" id="dyn_content" type="text" value="Hello World"
+    onblur="refresh();"
+    onchange="refresh();"
+    onkeyup="refresh();"></input>
+
+  <p>This is a DataURI QR Code :</p>
+  <qr-code contents="Hello World" output-mode="DataURI" style="width: 100px;height: 100px;"></qr-code>
+
+  <p>This is a DataURI QR Code with a wider margin :</p>
+  <qr-code contents="Hello World" output-mode="DataURI" margin="10" style="width: 100px;height: 100px;"></qr-code>
+
+  <p>This is a DataURI QR Code with a bigger scale (finer image as size is handled by styles) :</p>
+  <qr-code class="with-rounded-corners" contents="Hello World" output-mode="DataURI" scale="10" style="width: 100px;height: 100px;"></qr-code>
+
+  <p>This is a colorized DataURI QR Code :</p>
+  <qr-code contents="Hello World" color-light="#50550088" color-dark="#50005500" style="width: 100px;height: 100px;"></qr-code>
+
+  <p>This is an SVG one :</p>
+  <qr-code class="with-rounded-corners" contents="Hello World" output-mode="SVG" style="width: 100px;height: 100px;"></qr-code>
 
 </body>
 </html>

@@ -22,4 +22,5 @@ Thumbs.db
 UserInterfaceState.xcuserstate
 .env
 
-assets/node-qrcode
+src/assets/node-qrcode
+.npmrc

@@ -27,7 +27,13 @@ declare global {
   namespace JSXElements {
       export interface QrCodeAttributes extends HTMLAttributes {
         
-          contents?: string
+          contents?: string,
+          errorCorrectionLevel?: any,
+          margin?: number,
+          scale?: number,
+          colorDark?: string,
+          colorLight?: string,
+          outputMode?: any
       }
   }
 }
