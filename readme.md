@@ -16,7 +16,7 @@ Stencil components are just Web Components, so they work in any major framework 
 
 ## Getting Started
 
-To start building a new web component using Stencil, clone this repo to a new directory:
+To test or contribute to this project, clone this repo to a new directory:
 
 ```bash
 git clone https://github.com/doppelganger9/stencil-qrcode-component.git
@@ -50,6 +50,18 @@ npm test
 
 Need help? Check out Stencil docs [here](https://stenciljs.com/docs/my-first-component).
 
+To update & publish on your project's GitHub Pages, run:
+```bash
+npm run prepare
+npm run publish-docs
+```
+
 ## QR Code library
 
-I used [node-qrcode](https://github.com/soldair/node-qrcode) to generate the image of the QR Code.
+This project uses [node-qrcode](https://github.com/soldair/node-qrcode) to generate the image (dataURI or SVG) of the QR Code.
+
+## GitHub Pages
+
+See [the live demo GitHub Pages](https://doppelganger9.github.io/stencil-qrcode-component/).
+
+Big thanks to [Samuel Mortenson (@mortenson)](https://github.com/mortenson) and its [Ame Components](https://github.com/mortenson/ame-components) for automating the Github Page publishing!
