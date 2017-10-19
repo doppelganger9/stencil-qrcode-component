@@ -1,5 +1,5 @@
 exports.config = {
-  namespace: 'qrcode',
+  namespace: 'stqrcmp',
   generateDistribution: true,
   bundles: [
     { components: ['qr-code'] }

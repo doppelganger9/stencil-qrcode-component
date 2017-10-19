@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-  <title>Stencil Component Starter</title>
-  <script src="/build/qrcode.js"></script>
+  <title>Stencil QRCode Component</title>
+  <script src="/build/stqrcmp.js"></script>
   <!-- TODO: find a way to remove this script dependency and move it to the web-component if possible? -->
-  <script src="/assets/node-qrcode/qrcode.js"></script>
+  <script src="/assets/qrcode-generator/qrcode.js"></script>
   <script>
     // For demo purposes, to show usage of props change
     const refresh = () => Array.from(document.getElementsByTagName('qr-code')).map(e => {
@@ -46,34 +46,6 @@
 &lt;/qr-code&gt;</pre>
   <qr-code contents="Hello World" output-mode="DataURI" style="width: 100px;height: 100px;"></qr-code>
 
-  <h3>QR Code with wider margin</h3>
-<pre>&lt;qr-code
- contents="Hello World"
- output-mode="DataURI"
- <b>margin="10"</b>
- style="width: 100px;height: 100px;"&gt;
-&lt;/qr-code&gt;</pre>
-  <qr-code contents="Hello World" output-mode="DataURI" margin="10" style="width: 100px;height: 100px;"></qr-code>
-
-  <h3>QR Code with bigger scale (finer image as size is handled by styles)</h3>
-<pre>&lt;qr-code
-  class="with-rounded-corners"
-  contents="Hello World"
-  output-mode="DataURI"
-  <b>scale="10"</b>
-  style="width: 100px;height: 100px;"&gt;
-&lt;/qr-code&gt;</pre>
-  <qr-code class="with-rounded-corners" contents="Hello World" output-mode="DataURI" scale="10" style="width: 100px;height: 100px;"></qr-code>
-
-  <h3>colorized QR Code</h3>
-<pre>&lt;qr-code
-  contents="Hello World"
-  <b>color-light="#50550088"
-  color-dark="#50005500"</b>
-  style="width: 100px;height: 100px;"&gt;
-&lt;/qr-code&gt;</pre>
-  <qr-code contents="Hello World" color-light="#50550088" color-dark="#50005500" style="width: 100px;height: 100px;"></qr-code>
-
   <h3>SVG QR Code</h3>
 <pre>&lt;qr-code
   class="with-rounded-corners"
@@ -82,6 +54,14 @@
   style="width: 100px;height: 100px;"&gt;
 &lt;/qr-code&gt;</pre>
   <qr-code class="with-rounded-corners" contents="Hello World" output-mode="SVG" style="width: 100px;height: 100px;"></qr-code>
+
+    <h3>Table QR Code</h3>
+<pre>&lt;qr-code
+  contents="Hello World"
+  <b>output-mode="Table"</b>
+  style="width: 100px;height: 100px;"&gt;
+&lt;/qr-code&gt;</pre>
+  <qr-code contents="Hello World" output-mode="Table" style="width: 100px;height: 100px;"></qr-code>
 
 </body>
 </html>

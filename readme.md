@@ -58,7 +58,7 @@ npm run publish-docs
 
 ## QR Code library
 
-This project uses [node-qrcode](https://github.com/soldair/node-qrcode) to generate the image (dataURI or SVG) of the QR Code.
+This project uses [qrcode-generator](https://www.npmjs.com/package/qrcode-generator) to generate the image (dataURI, SVG or Table) of the QR Code.
 
 ## GitHub Pages
 

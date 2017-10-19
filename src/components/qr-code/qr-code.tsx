@@ -3,11 +3,12 @@ import { Component, Prop, State, PropDidChange } from "@stencil/core";
 // NOTE: qrcode is a node NPM JavaScript library.
 // It has a browserified version for front-end usage
 // TODO: find a way to link the dependency from the component itself, not index.html
-import * as qrcodelib from "qrcode";
+import * as qrcode from "qrcode-generator";
 
 enum OutputMode {
   DataURI = "DataURI",
-  SVG = "SVG"
+  SVG = "SVG",
+  Table = "Table"
 }
 
 enum ErrorCorrectionLevel {
@@ -39,24 +40,16 @@ export class QRCodeWebComponent {
   }
 
   computeAndSetData(text: string, outputMode: OutputMode) {
-    const options = {
-      errorCorrectionLevel: this.errorCorrectionLevel,
-      scale: this.scale,
-      margin: this.margin,
-      color: {
-        dark: this.colorDark,
-        light: this.colorLight
-      }
-    };
-    const callback = (err, qrcodeImageContent) => {
-      if (err) throw err;
-      this.data = qrcodeImageContent;
-    };
+    const qr : QRCode = qrcode(0, this.errorCorrectionLevel);
+    qr.addData(text);
+    qr.make();
 
     if (outputMode === "DataURI") {
-      qrcodelib.toDataURL(text, options, callback);
+      this.data = qr.createImgTag();
     } else if (outputMode === "SVG") {
-      qrcodelib.toString(text, options, callback);
+      this.data = qr.createSvgTag();
+    } else if (outputMode === "Table") {
+      this.data = qr.createTableTag();
     } else {
       this.data = null;
     }
@@ -70,34 +63,15 @@ export class QRCodeWebComponent {
   changeContentsHandler(newValue: string) {
     this.computeAndSetData(newValue, this.outputMode);
   }
-  @PropDidChange("colorLight")
-  changeColorLightHandler() {
-    this.computeAndSetData(this.contents, this.outputMode);
-  }
-  @PropDidChange("colorDark")
-  changeColorDarkHandler() {
-    this.computeAndSetData(this.contents, this.outputMode);
-  }
-  @PropDidChange("margin")
-  changeMarginHandler() {
-    this.computeAndSetData(this.contents, this.outputMode);
-  }
   @PropDidChange("errorCorrectionLevel")
   changeErrorCorrectionLevelHandler() {
     this.computeAndSetData(this.contents, this.outputMode);
   }
-  @PropDidChange("scale")
-  changeScaleHandler() {
-    this.computeAndSetData(this.contents, this.outputMode);
-  }
 
   render() {
-    if (this.outputMode === "DataURI") {
-      return <img src={this.data} />;
-    } else if (this.outputMode === "SVG") {
       // see https://github.com/ionic-team/stencil/issues/148
-      return <div innerHTML={this.data} />;
-    }
-    return <p>???</p>;
+    return (
+      <div innerHTML={this.data} />
+    );
   }
 }
