@@ -1,3 +1,4 @@
+// from https://gist.github.com/mortenson/044f30bea778f4e98e4e14c661aa7d9a
 const ghpages = require("gh-pages");
 const rebase = require("rebase");
 const fs = require("fs-extra");

@@ -65,3 +65,5 @@ This project uses [node-qrcode](https://github.com/soldair/node-qrcode) to gener
 See [the live demo GitHub Pages](https://doppelganger9.github.io/stencil-qrcode-component/).
 
 Big thanks to [Samuel Mortenson (@mortenson)](https://github.com/mortenson) and its [Ame Components](https://github.com/mortenson/ame-components) for automating the Github Page publishing!
+
+There is now a [Gist](https://gist.github.com/mortenson/044f30bea778f4e98e4e14c661aa7d9a).
