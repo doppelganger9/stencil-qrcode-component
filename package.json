@@ -1,6 +1,6 @@
 {
   "name": "qr-code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Stencil QRCode Component",
   "main": "dist/collection/index.js",
   "types": "dist/collection/index.d.ts",
