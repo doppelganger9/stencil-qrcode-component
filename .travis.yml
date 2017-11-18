@@ -1,19 +1,20 @@
 language: node_js
+
 node_js:
   - "8"
-cache:
-  directories:
-    - "node_modules"
+
 install:
   - npm install
+
 script:
   - npm run test
   - npm run prepare
   - ls -l www/
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: www
-  on:
-    branch: master
+
+#deploy:
+#  provider: pages
+#  skip_cleanup: true
+#  local_dir: www
+#  github_token: $GITHUB_TOKEN
+#  on:
+#    branch: master

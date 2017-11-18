@@ -1,4 +1,10 @@
-import { Component, Prop, State, PropDidChange } from "@stencil/core";
+import {
+  Component,
+  Prop,
+  State,
+  PropDidChange,
+  PropWillChange
+} from '@stencil/core';
 
 // NOTE: qrcode is a node NPM JavaScript library.
 // It has a browserified version for front-end usage
@@ -20,17 +26,16 @@ import qrcode from "qrcode-generator";
 // }
 
 @Component({
-  tag: "qr-code",
-  styleUrl: "qr-code.scss"
+  tag: 'qr-code',
+  styleUrl: 'qr-code.scss'
 })
 export class QRCodeWebComponent {
-  @Prop() contents: string = "Hello World";
-  @Prop()
-  errorCorrectionLevel: string /*ErrorCorrectionLevel*/ = 'H'; //ErrorCorrectionLevel.High;
+  @Prop() contents: string = 'Hello World';
+  @Prop() errorCorrectionLevel: string /*ErrorCorrectionLevel*/ = 'H'; //ErrorCorrectionLevel.High;
   @Prop() margin: number = 4;
   @Prop() scale: number = 4;
-  @Prop() colorDark: string = "#000000ff";
-  @Prop() colorLight: string = "#ffffffff";
+  @Prop() colorDark: string = '#000000ff';
+  @Prop() colorLight: string = '#ffffffff';
   //@Prop() qrVersion: number;
   @Prop() outputMode: string /* OutputMode */ = 'DataURI'; //OutputMode.DataURI;
 
@@ -41,38 +46,45 @@ export class QRCodeWebComponent {
   }
 
   computeAndSetData(text: string, outputMode: string /*OutputMode*/) {
-    const qr : QRCode = qrcode(0, this.errorCorrectionLevel);
+    const qr: QRCode = qrcode(0, this.errorCorrectionLevel);
     qr.addData(text);
     qr.make();
 
-    if (outputMode === "DataURI") {
+    if (outputMode === 'DataURI') {
       this.data = qr.createImgTag();
-    } else if (outputMode === "SVG") {
+    } else if (outputMode === 'SVG') {
       this.data = qr.createSvgTag();
-    } else if (outputMode === "Table") {
+    } else if (outputMode === 'Table') {
       this.data = qr.createTableTag();
     } else {
       this.data = null;
     }
   }
 
-  @PropDidChange("outputMode")
+  @PropDidChange('outputMode')
   changeOutputModeHandler(newValue: string /* OutputMode*/) {
     this.computeAndSetData(this.contents, newValue);
   }
-  @PropDidChange("contents")
+
+  @PropDidChange('contents')
   changeContentsHandler(newValue: string) {
+    console.log('contents changed', newValue);
     this.computeAndSetData(newValue, this.outputMode);
   }
-  @PropDidChange("errorCorrectionLevel")
+  @PropDidChange('errorCorrectionLevel')
   changeErrorCorrectionLevelHandler() {
     this.computeAndSetData(this.contents, this.outputMode);
   }
 
+  @PropWillChange('contents')
+  @PropWillChange('outputMode')
+  @PropWillChange('errorCorrectionLevel')
+  stencil008_5_Workaround() {
+    // just to temporarily solve https://github.com/ionic-team/stencil/issues/312
+  }
+
   render() {
-      // see https://github.com/ionic-team/stencil/issues/148
-    return (
-      <div innerHTML={this.data} />
-    );
+    // see https://github.com/ionic-team/stencil/issues/148
+    return <div innerHTML={this.data} />;
   }
 }
