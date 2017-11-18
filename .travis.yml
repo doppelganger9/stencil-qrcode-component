@@ -7,6 +7,13 @@ cache:
 install:
   - npm install
 script:
-  - npm run build
-#  - npm run prepare
-#  - npm run publish-docs
+  - npm run test
+  - npm run prepare
+  - ls -l www/
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: www
+  on:
+    branch: master
