@@ -2,21 +2,22 @@ import { Component, Prop, State, PropDidChange } from "@stencil/core";
 
 // NOTE: qrcode is a node NPM JavaScript library.
 // It has a browserified version for front-end usage
-// TODO: find a way to link the dependency from the component itself, not index.html
-import * as qrcode from "qrcode-generator";
+import qrcode from "qrcode-generator";
 
-enum OutputMode {
-  DataURI = "DataURI",
-  SVG = "SVG",
-  Table = "Table"
-}
+// exported enums are not copied in components.d.ts by stencil build :-( since 0.0.8 (worked in 0.0.6)
 
-enum ErrorCorrectionLevel {
-  Low = "L",
-  Medium = "M",
-  Quality = "Q",
-  High = "H"
-}
+// export enum OutputMode {
+//   DataURI = "DataURI",
+//   SVG = "SVG",
+//   Table = "Table"
+// }
+
+// export enum ErrorCorrectionLevel {
+//   Low = "L",
+//   Medium = "M",
+//   Quality = "Q",
+//   High = "H"
+// }
 
 @Component({
   tag: "qr-code",
@@ -25,13 +26,13 @@ enum ErrorCorrectionLevel {
 export class QRCodeWebComponent {
   @Prop() contents: string = "Hello World";
   @Prop()
-  errorCorrectionLevel: ErrorCorrectionLevel = ErrorCorrectionLevel.High;
+  errorCorrectionLevel: string /*ErrorCorrectionLevel*/ = 'H'; //ErrorCorrectionLevel.High;
   @Prop() margin: number = 4;
   @Prop() scale: number = 4;
   @Prop() colorDark: string = "#000000ff";
   @Prop() colorLight: string = "#ffffffff";
   //@Prop() qrVersion: number;
-  @Prop() outputMode: OutputMode = OutputMode.DataURI;
+  @Prop() outputMode: string /* OutputMode */ = 'DataURI'; //OutputMode.DataURI;
 
   @State() data: string;
 
@@ -39,7 +40,7 @@ export class QRCodeWebComponent {
     this.computeAndSetData(this.contents, this.outputMode);
   }
 
-  computeAndSetData(text: string, outputMode: OutputMode) {
+  computeAndSetData(text: string, outputMode: string /*OutputMode*/) {
     const qr : QRCode = qrcode(0, this.errorCorrectionLevel);
     qr.addData(text);
     qr.make();
@@ -56,7 +57,7 @@ export class QRCodeWebComponent {
   }
 
   @PropDidChange("outputMode")
-  changeOutputModeHandler(newValue: OutputMode) {
+  changeOutputModeHandler(newValue: string /* OutputMode*/) {
     this.computeAndSetData(this.contents, newValue);
   }
   @PropDidChange("contents")

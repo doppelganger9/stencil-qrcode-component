@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <title>Stencil QRCode Component</title>
   <script src="/build/stqrcmp.js"></script>
-  <!-- TODO: find a way to remove this script dependency and move it to the web-component if possible? -->
-  <script src="/assets/qrcode-generator/qrcode.js"></script>
   <script>
     // For demo purposes, to show usage of props change
     const refresh = () => Array.from(document.getElementsByTagName('qr-code')).map(e => {

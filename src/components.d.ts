@@ -4,39 +4,40 @@
  * and imports for stencil collections that might be configured in your stencil.config.js file
  */
 
-import { QRCodeWebComponent as QrCode } from './components/qr-code/qr-code';
 
-interface HTMLQrCodeElement extends QrCode, HTMLElement {
-}
-declare var HTMLQrCodeElement: {
-  prototype: HTMLQrCodeElement;
-  new (): HTMLQrCodeElement;
-};
+import {
+  QRCodeWebComponent as QrCode
+} from './components/qr-code/qr-code';
+
 declare global {
+  interface HTMLQrCodeElement extends QrCode, HTMLElement {
+  }
+  var HTMLQrCodeElement: {
+    prototype: HTMLQrCodeElement;
+    new (): HTMLQrCodeElement;
+  };
   interface HTMLElementTagNameMap {
-      "qr-code": HTMLQrCodeElement;
+    "qr-code": HTMLQrCodeElement;
   }
   interface ElementTagNameMap {
-      "qr-code": HTMLQrCodeElement;
+    "qr-code": HTMLQrCodeElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "qr-code": JSXElements.QrCodeAttributes;
-      }
+    interface IntrinsicElements {
+      "qr-code": JSXElements.QrCodeAttributes;
+    }
   }
   namespace JSXElements {
-      export interface QrCodeAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          contents?: string,
-          errorCorrectionLevel?: any,
-          margin?: number,
-          scale?: number,
-          colorDark?: string,
-          colorLight?: string,
-          outputMode?: any
-      }
+    export interface QrCodeAttributes extends HTMLAttributes {
+      
+        contents?: string,
+        errorCorrectionLevel?: string,
+        margin?: number,
+        scale?: number,
+        colorDark?: string,
+        colorLight?: string,
+        outputMode?: string
+    }
   }
 }
 

@@ -16,12 +16,11 @@
     "start": "npm run dev",
     "test": "jest --no-cache",
     "test.watch": "jest --watch --no-cache",
-    "postinstall": "mkdir -p src/assets/qrcode-generator && cp node_modules/qrcode-generator/qrcode.js src/assets/qrcode-generator/qrcode.js",
     "prepare": "npm run build",
     "publish-docs": "node docs.js"
   },
   "dependencies": {
-    "@stencil/core": "0.0.6-22",
+    "@stencil/core": "0.0.8-5",
     "qrcode-generator": "1.3.1"
   },
   "devDependencies": {
