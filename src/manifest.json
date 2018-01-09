@@ -1,0 +1,21 @@
+{
+  "name": "QR Code with Stencil sample",
+  "short_name": "qrcode-sample",
+  "lang": "fr",
+  "background_color": "#FFF",
+  "theme_color": "#000",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src":"assets/favicon.png",
+      "sizes": "216x216",
+      "type": "images/png"
+    },
+    {
+      "src":"assets/icon-719.png",
+      "sizes": "719x719",
+      "type": "images/png"
+    }
+  ]
+}
