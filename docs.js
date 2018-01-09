@@ -24,6 +24,7 @@ files.forEach(filename => {
     link: replacements,
     script: replacements
   });
+  rebased = rebased.replace(/\/sw\.js/, `/${subdir}/sw.js`);
   fs.writeFileSync(path, rebased);
 });
 
