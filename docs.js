@@ -1,21 +1,23 @@
 // from https://gist.github.com/mortenson/044f30bea778f4e98e4e14c661aa7d9a
-const ghpages = require("gh-pages");
-const rebase = require("rebase");
-const fs = require("fs-extra");
+const ghpages = require('gh-pages');
+const rebase = require('rebase');
+const fs = require('fs-extra');
+const path = require('path');
 
-let subdir = "stencil-qrcode-component";
+// github page URL context = repository name
+let subdir = 'stencil-qrcode-component';
 
 fs.removeSync(subdir);
 fs.mkdirSync(subdir);
-fs.copySync("www", subdir);
+fs.copySync('www', subdir);
 
-let files = ["index.html"];
+let files = ['index.html'];
 files.forEach(filename => {
-  let path = subdir + "/" + filename;
-  let file = fs.readFileSync(path, "utf8");
+  let filepath = path.join(__dirname,subdir,filename);
+  let file = fs.readFileSync(filepath, 'utf8');
   let replacements = {
-    "^/(?!/)": "/" + subdir + "/",
-    "^(?!/|http|https)": "/" + subdir + "/"
+    '^/(?!/)': `/${subdir}/`,
+    '^(?!/|http|https)': `/${subdir}/`
   };
   let rebased = rebase(file, {
     url: replacements,
@@ -25,8 +27,16 @@ files.forEach(filename => {
     script: replacements
   });
   rebased = rebased.replace(/\/sw\.js/, `/${subdir}/sw.js`);
-  fs.writeFileSync(path, rebased);
+  fs.writeFileSync(filepath, rebased);
+  console.log(`rebased all URLs, A, IMG, LINK, SCRIPT in ${filepath} to ${subdir}`);
 });
+
+let manifestPath = path.join(__dirname, subdir, 'manifest.json');
+let manifest = fs.readFileSync(manifestPath, 'utf8');
+// replace start_url in manifest.json
+let rebasedManifest = manifest.replace(/"\/"/, `"/${subdir}/"`);
+fs.writeFileSync(manifestPath, rebasedManifest);
+console.log(`rebased start_url in ${manifestPath} to ${subdir}`);
 
 ghpages.publish(subdir, function(err) {
   if (err) {

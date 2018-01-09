@@ -68,3 +68,14 @@ See [the live demo GitHub Pages](https://doppelganger9.github.io/stencil-qrcode-
 Big thanks to [Samuel Mortenson (@mortenson)](https://github.com/mortenson) and its [Ame Components](https://github.com/mortenson/ame-components) for automating the Github Page publishing!
 
 There is now a [Gist](https://gist.github.com/mortenson/044f30bea778f4e98e4e14c661aa7d9a).
+
+## PWA
+
+The GitHub Page is a PWA.
+
+LightHouse score is:
+
+- PWA: 100
+- Performance: 96
+- Accessibility: 100
+- Best Practices: 94
