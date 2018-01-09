@@ -27,7 +27,8 @@ import qrcode from "qrcode-generator";
 
 @Component({
   tag: 'qr-code',
-  styleUrl: 'qr-code.scss'
+  styleUrl: 'qr-code.scss',
+  shadow: true,
 })
 export class QRCodeWebComponent {
   @Prop() contents: string = 'Hello World';

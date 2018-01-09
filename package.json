@@ -2,8 +2,8 @@
   "name": "qr-code",
   "version": "0.0.2",
   "description": "Stencil QRCode Component",
-  "main": "dist/collection/index.js",
-  "types": "dist/collection/index.d.ts",
+  "main": "dist/stqrcmp.js",
+  "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "files": [
     "dist/"
@@ -20,7 +20,7 @@
     "publish-docs": "node docs.js"
   },
   "dependencies": {
-    "@stencil/core": "0.0.8-5",
+    "@stencil/core": "^0.1.0",
     "qrcode-generator": "1.3.1"
   },
   "devDependencies": {
