@@ -26,7 +26,7 @@
   "devDependencies": {
     "@stencil/dev-server": "latest",
     "@stencil/utils": "latest",
-    "@types/jest": "21.1.4",
+    "@types/jest": "21.1.10",
     "jest": "21.2.1",
     "gh-pages": "1.0.0",
     "rebase": "0.3.0"
