@@ -27,7 +27,7 @@
     "@stencil/dev-server": "latest",
     "@stencil/utils": "latest",
     "@types/jest": "21.1.4",
-    "jest": "21.2.1",
+    "jest": "23.6.0",
     "gh-pages": "1.0.0",
     "rebase": "0.3.0"
   },
