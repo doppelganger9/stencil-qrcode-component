@@ -23,9 +23,13 @@
   "devDependencies": {
     "@stencil/core": "^0.13.1",
     "@stencil/sass": "^0.1.1",
-    "@types/jest": "21.1.4",
+    "@types/jest": "23.3.5",
+    "@types/puppeteer": "1.9.0",
     "gh-pages": "1.0.0",
-    "jest": "21.2.1",
+    "jest": "23.5.0",
+    "jest-environment-node": "23.4.0",
+    "pixelmatch": "4.0.2",
+    "puppeteer": "1.7.0",
     "rebase": "0.3.0",
     "workbox-build": "3.4.1"
   },
