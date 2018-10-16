@@ -1,5 +1,5 @@
 {
-  "name": "qr-code",
+  "name": "qr-code-stencil-component",
   "version": "0.0.3",
   "description": "Stencil QRCode Component",
   "module": "dist/esm/index.js",

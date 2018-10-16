@@ -24,9 +24,7 @@ files.forEach(filename => {
     a: replacements,
     img: replacements,
     link: replacements,
-    script: replacements
   });
-  rebased = rebased.replace(/\/sw\.js/, `/${subdir}/sw.js`);
   fs.writeFileSync(filepath, rebased);
   console.log(`rebased all URLs, A, IMG, LINK, SCRIPT in ${filepath} to ${subdir}`);
 });

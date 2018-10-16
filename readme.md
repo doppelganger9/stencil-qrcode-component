@@ -77,9 +77,10 @@ The GitHub Page is a PWA.
 LightHouse score is:
 
 - PWA: 100
-- Performance: 96
-- Accessibility: 100
-- Best Practices: 94
+- Performance: 100
+- Accessibility: 87
+- Best Practices: 100
+- SEO: 100
 
 
 ## License
