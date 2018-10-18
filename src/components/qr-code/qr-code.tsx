@@ -2,8 +2,7 @@ import {
   Component,
   Prop,
   State,
-  PropDidChange,
-  PropWillChange
+  Watch
 } from '@stencil/core';
 
 // NOTE: qrcode is a node NPM JavaScript library.
@@ -62,26 +61,19 @@ export class QRCodeWebComponent {
     }
   }
 
-  @PropDidChange('outputMode')
+  @Watch('outputMode')
   changeOutputModeHandler(newValue: string /* OutputMode*/) {
     this.computeAndSetData(this.contents, newValue);
   }
 
-  @PropDidChange('contents')
+  @Watch('contents')
   changeContentsHandler(newValue: string) {
     console.log('contents changed', newValue);
     this.computeAndSetData(newValue, this.outputMode);
   }
-  @PropDidChange('errorCorrectionLevel')
+  @Watch('errorCorrectionLevel')
   changeErrorCorrectionLevelHandler() {
     this.computeAndSetData(this.contents, this.outputMode);
-  }
-
-  @PropWillChange('contents')
-  @PropWillChange('outputMode')
-  @PropWillChange('errorCorrectionLevel')
-  stencil008_5_Workaround() {
-    // just to temporarily solve https://github.com/ionic-team/stencil/issues/312
   }
 
   render() {
