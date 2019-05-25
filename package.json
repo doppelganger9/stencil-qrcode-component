@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@stencil/core": "0.13.1",
-    "@stencil/sass": "0.1.1",
+    "@stencil/sass": "0.2.3",
     "@types/jest": "23.3.5",
     "@types/puppeteer": "1.12.1",
     "gh-pages": "1.2.0",
