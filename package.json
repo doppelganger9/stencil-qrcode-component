@@ -18,7 +18,7 @@
     "publish-docs": "node docs.js"
   },
   "dependencies": {
-    "qrcode-generator": "1.4.3"
+    "qrcode-generator": "1.4.4"
   },
   "devDependencies": {
     "@stencil/core": "1.7.1",
