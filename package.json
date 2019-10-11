@@ -28,7 +28,7 @@
     "gh-pages": "2.1.1",
     "jest": "24.9.0",
     "jest-environment-node": "24.9.0",
-    "pixelmatch": "5.0.2",
+    "pixelmatch": "5.1.0",
     "puppeteer": "1.19.0",
     "rebase": "0.3.0",
     "workbox-build": "3.6.3"
