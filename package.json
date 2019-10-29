@@ -21,7 +21,7 @@
     "qrcode-generator": "1.4.4"
   },
   "devDependencies": {
-    "@stencil/core": "1.7.1",
+    "@stencil/core": "1.7.5",
     "@stencil/sass": "1.1.1",
     "@types/jest": "24.0.18",
     "@types/puppeteer": "1.20.2",
