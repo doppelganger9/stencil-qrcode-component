@@ -6,6 +6,7 @@ describe('qr-code', () => {
 
     await page.setContent('<qr-code></qr-code>');
     const element = await page.find('qr-code');
-    expect(element).toHaveClass('hydrated');
+
+    expect(element).toMatchSnapshot();
   });
 });

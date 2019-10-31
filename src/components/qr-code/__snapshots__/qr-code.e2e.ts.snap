@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`qr-code renders 1`] = `
+<qr-code class="hydrated">
+  <mock:shadow-root>
+    <div>
+      <img height="66" src="data:image/gif;base64,R0lGODdhQgBCAIAAAAAAAP///ywAAAAAQgBCAAAC/4yPqcvtD6OctNqLs968+w+G4kgywImmKXKygKG+QUzLUh27+qzC+DppNYRCF5BoWxQjSwXS2eP5HM0H8ijD+oBTnjaYjV7DW9QuJwWXn15yujtm38LfepKNrlLp5jQaiieWBBHn9pdg9zW312ViOIgIyTjk5ggneaBH+RN4ecmJ6Qjq6fc4WmLEh6qBpSmyVLNmyndoAUsj+0kbhXGrC3jXp1jhW1rF1VbWyBSsbCzM+7xM2Jz8XHgGTaFZPDYd+U1tmTkbTm4+11p9K/fmvi3YHdxeDI9+/i5t7Up5T5rtLd8edbH00dMGhiAug5X2hSKmyl3AXCMCymPXpxeoXYRQZOV5KIoTRYA4/G34OJEcMhIoI6biN1Bkm5UOv8GMdKpgqn/4FvWzRurYPJDgfiLrVNSZz48dlWw02ZRpUpwyb0YVBKzeVI0UhR7FZNUKx2sNC/6wN3PWwZa1xE4a6VTnBX4Y6ZbMsHEdwmVI08n8JVEv1FWECxs+jDix4sWMGzsuXAAAOw==" width="66">
+    </div>
+  </mock:shadow-root>
+</qr-code>
+`;
