@@ -2,27 +2,14 @@ import {
   Component,
   Prop,
   State,
-  Watch
+  Watch,
+  h
 } from '@stencil/core';
 
 // NOTE: qrcode is a node NPM JavaScript library.
 // It has a browserified version for front-end usage
 import qrcode from "qrcode-generator";
-
-// exported enums are not copied in components.d.ts by stencil build :-( since 0.0.8 (worked in 0.0.6)
-
-// export enum OutputMode {
-//   DataURI = "DataURI",
-//   SVG = "SVG",
-//   Table = "Table"
-// }
-
-// export enum ErrorCorrectionLevel {
-//   Low = "L",
-//   Medium = "M",
-//   Quality = "Q",
-//   High = "H"
-// }
+import { ErrorCorrectionLevel, OutputMode } from './enums';
 
 @Component({
   tag: 'qr-code',
@@ -31,13 +18,13 @@ import qrcode from "qrcode-generator";
 })
 export class QRCodeWebComponent {
   @Prop() contents: string = 'Hello World';
-  @Prop() errorCorrectionLevel: string /*ErrorCorrectionLevel*/ = 'H'; //ErrorCorrectionLevel.High;
+  @Prop() errorCorrectionLevel: ErrorCorrectionLevel = ErrorCorrectionLevel.High;
   @Prop() margin: number = 4;
   @Prop() scale: number = 4;
   @Prop() colorDark: string = '#000000ff';
   @Prop() colorLight: string = '#ffffffff';
   //@Prop() qrVersion: number;
-  @Prop() outputMode: string /* OutputMode */ = 'DataURI'; //OutputMode.DataURI;
+  @Prop() outputMode: OutputMode = OutputMode.DataURI;
 
   @State() data: string;
 
@@ -45,7 +32,7 @@ export class QRCodeWebComponent {
     this.computeAndSetData(this.contents, this.outputMode);
   }
 
-  computeAndSetData(text: string, outputMode: string /*OutputMode*/) {
+  computeAndSetData(text: string, outputMode: OutputMode) {
     const qr: QRCode = qrcode(0, this.errorCorrectionLevel);
     qr.addData(text);
     qr.make();
@@ -62,7 +49,7 @@ export class QRCodeWebComponent {
   }
 
   @Watch('outputMode')
-  changeOutputModeHandler(newValue: string /* OutputMode*/) {
+  changeOutputModeHandler(newValue: OutputMode) {
     this.computeAndSetData(this.contents, newValue);
   }
 

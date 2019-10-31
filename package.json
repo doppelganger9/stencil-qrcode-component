@@ -2,7 +2,7 @@
   "name": "qr-code-stencil-component",
   "version": "0.0.3",
   "description": "Stencil QRCode Component",
-  "module": "dist/esm/index.js",
+  "module": "dist/index.mjs",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
@@ -31,7 +31,7 @@
     "pixelmatch": "5.1.0",
     "puppeteer": "1.20.0",
     "rebase": "0.3.0",
-    "workbox-build": "3.6.3"
+    "workbox-build": "4.3.1"
   },
   "repository": {
     "type": "git",
