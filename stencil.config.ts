@@ -9,6 +9,12 @@ const ifTest = ( npmLifecycleEvent === 'start' || npmLifecycleEvent === 'test' |
 const baseUrlExceptIfTesting = ifTest ? {} : {baseUrl: 'https://doppelganger9.github.io/stencil-qrcode-component'};
 console.log(`${JSON.stringify(baseUrlExceptIfTesting)}`);
 
+/*
+When a baseURL is given, the dist folder will contain the subdomain,
+the host.config.json will use this subdomain
+the index.html file will import differently the main bundled script, using the subdomain
+*/
+
 export const config: Config = {
   namespace: 'stqrcmp',
   outputTargets:[
