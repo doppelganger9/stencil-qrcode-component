@@ -11,6 +11,11 @@ import {
 import qrcode from "qrcode-generator";
 import { ErrorCorrectionLevel, OutputMode } from './enums';
 
+function appendAttribute(attributeName: string, attributeValue: string, nodeAsString: string): string {
+  const mutatedNodeAsString = nodeAsString.replace('>', ` ${attributeName}="${attributeValue.replace('"','\'')}" >`);
+  return mutatedNodeAsString;
+}
+
 @Component({
   tag: 'qr-code',
   styleUrl: 'qr-code.scss',
@@ -39,6 +44,7 @@ export class QRCodeWebComponent {
 
     if (outputMode === 'DataURI') {
       this.data = qr.createImgTag();
+      this.data = appendAttribute('alt', 'QR Code Image for ' + text, this.data);
     } else if (outputMode === 'SVG') {
       this.data = qr.createSvgTag();
     } else if (outputMode === 'Table') {
