@@ -17,3 +17,6 @@ deploy:
   github_token: $GITHUB_TOKEN
   on:
     branch: master
+
+after_deploy:
+  - npm run lh -- https://doppelganger9.github.io/stencil-qrcode-component/
