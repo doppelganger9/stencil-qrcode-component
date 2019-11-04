@@ -6,9 +6,9 @@
 
 This is a web-component made using [stencil component starter](https://github.com/ionic-team/stencil-component-starter).
 
-The purpose is to test a component exposing a third-party library to create its contents.
+The purpose is to test a component exposing a third-party library that is used to create the view contents (the QR Code).
 
-## Stencil
+## [Stencil](https://stenciljs.com/)
 
 Stencil is a compiler for building fast web apps using Web Components.
 
@@ -72,9 +72,9 @@ There is now a [Gist](https://gist.github.com/mortenson/044f30bea778f4e98e4e14c6
 
 ## PWA
 
-The GitHub Page is a PWA.
+The GitHub Page was a PWA.
 
-LightHouse score is:
+LightHouse score at one point was:
 
 - PWA: 100
 - Performance: 100
@@ -82,6 +82,7 @@ LightHouse score is:
 - Best Practices: 100
 - SEO: 100
 
+Now LightHouse Bot is watching this in every Pull Request.
 
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdoppelganger9%2Fstencil-qrcode-component.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdoppelganger9%2Fstencil-qrcode-component?ref=badge_large)
