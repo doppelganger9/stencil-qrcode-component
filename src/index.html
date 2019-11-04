@@ -35,6 +35,14 @@
     .with-rounded-corners div, .with-rounded-corners div svg, .with-rounded-corners img {
         border-radius:5px;
     }
+    /* For A11y: a big input text */
+    input#dyn_content {
+      box-sizing: border-box;
+      height: 48px;
+      width: 150px;
+      margin: 10px;
+      padding: 10px;
+    }
   </style>
 
 </head>
@@ -46,7 +54,7 @@
       alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png">
   </a>
   <label for="dyn_content">Change the contents of the QR Code here :</label>
-  <input name="dyn_content" id="dyn_content" type="text" value="Hello World"
+  <input name="dyn_content" id="dyn_content" type="text" value="Hello World" aria-label="QR Code content input"
     onblur="refresh();"
     onchange="refresh();"
     onkeyup="refresh();"></input>
