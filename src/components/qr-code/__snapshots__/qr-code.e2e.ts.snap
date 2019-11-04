@@ -4,8 +4,509 @@ exports[`qr-code renders 1`] = `
 <qr-code class="hydrated">
   <mock:shadow-root>
     <div>
-      <img height="66" src="data:image/gif;base64,R0lGODdhQgBCAIAAAAAAAP///ywAAAAAQgBCAAAC/4yPqcvtD6OctNqLs968+w+G4kgywImmKXKygKG+QUzLUh27+qzC+DppNYRCF5BoWxQjSwXS2eP5HM0H8ijD+oBTnjaYjV7DW9QuJwWXn15yujtm38LfepKNrlLp5jQaiieWBBHn9pdg9zW312ViOIgIyTjk5ggneaBH+RN4ecmJ6Qjq6fc4WmLEh6qBpSmyVLNmyndoAUsj+0kbhXGrC3jXp1jhW1rF1VbWyBSsbCzM+7xM2Jz8XHgGTaFZPDYd+U1tmTkbTm4+11p9K/fmvi3YHdxeDI9+/i5t7Up5T5rtLd8edbH00dMGhiAug5X2hSKmyl3AXCMCymPXpxeoXYRQZOV5KIoTRYA4/G34OJEcMhIoI6biN1Bkm5UOv8GMdKpgqn/4FvWzRurYPJDgfiLrVNSZz48dlWw02ZRpUpwyb0YVBKzeVI0UhR7FZNUKx2sNC/6wN3PWwZa1xE4a6VTnBX4Y6ZbMsHEdwmVI08n8JVEv1FWECxs+jDix4sWMGzsuXAAAOw==" width="66">
+      <img alt="QR Code Image for Hello World" height="66" src="data:image/gif;base64,R0lGODdhQgBCAIAAAAAAAP///ywAAAAAQgBCAAAC/4yPqcvtD6OctNqLs968+w+G4kgywImmKXKygKG+QUzLUh27+qzC+DppNYRCF5BoWxQjSwXS2eP5HM0H8ijD+oBTnjaYjV7DW9QuJwWXn15yujtm38LfepKNrlLp5jQaiieWBBHn9pdg9zW312ViOIgIyTjk5ggneaBH+RN4ecmJ6Qjq6fc4WmLEh6qBpSmyVLNmyndoAUsj+0kbhXGrC3jXp1jhW1rF1VbWyBSsbCzM+7xM2Jz8XHgGTaFZPDYd+U1tmTkbTm4+11p9K/fmvi3YHdxeDI9+/i5t7Up5T5rtLd8edbH00dMGhiAug5X2hSKmyl3AXCMCymPXpxeoXYRQZOV5KIoTRYA4/G34OJEcMhIoI6biN1Bkm5UOv8GMdKpgqn/4FvWzRurYPJDgfiLrVNSZz48dlWw02ZRpUpwyb0YVBKzeVI0UhR7FZNUKx2sNC/6wN3PWwZa1xE4a6VTnBX4Y6ZbMsHEdwmVI08n8JVEv1FWECxs+jDix4sWMGzsuXAAAOw==" width="66">
     </div>
   </mock:shadow-root>
 </qr-code>
+`;
+
+exports[`qr-code renders a text as a DATA-URI 1`] = `"data:image/gif;base64,R0lGODdhOgA6AIAAAAAAAP///ywAAAAAOgA6AAAC/4yPqcvtD6OctNqLs968+w+G4gKU5nkiaYK2JuW66svGKAw4pbEHK59r9CRDUrD38wUZRQjyppw9gcBV8/G0LpXTKJd21R2h12QWvHWOtQrzGo2rwmvtd5doH9f333skfNAlmEY3AUjlNSiGYzM32HhoBKmXmBczUomJ4acpCSX1xsdxWXMmamjDp1VEitcaGPoFmoSHOGlLiGjxmJpppNEyMxsLEgw7LFf8KeuFSxrJtMx23EeW23H2yvmRLUMNXQqJW7d6LXbri8wcJxQ7Da62yPxujirHq57c/JfnvGWsD943a8J+wQLI7x4lXYUUCvTnhxWNgpv67ZNYpl68diYFuzHcVU8ixIUXJomkFpCkGnQMMVJ62CmmzJk0a9q8iTOnThAFAAA7"`;
+
+exports[`qr-code renders a text as a QR Code image 1`] = `"data:image/gif;base64,R0lGODdhOgA6AIAAAAAAAP///ywAAAAAOgA6AAAC/4yPqcvtD6OctNqLs968+w+G4gKU5nkiaYK2JuW66svGKAw4pbEHK59r9CRDUrD38wUZRQjyppw9gcBV8/G0LpXTKJd21R2h12QWvHWOtQrzGo2rwmvtd5doH9f333skfNAlmEY3AUjlNSiGYzM32HhoBKmXmBczUomJ4acpCSX1xsdxWXMmamjDp1VEitcaGPoFmoSHOGlLiGjxmJpppNEyMxsLEgw7LFf8KeuFSxrJtMx23EeW23H2yvmRLUMNXQqJW7d6LXbri8wcJxQ7Da62yPxujirHq57c/JfnvGWsD943a8J+wQLI7x4lXYUUCvTnhxWNgpv67ZNYpl68diYFuzHcVU8ixIUXJomkFpCkGnQMMVJ62CmmzJk0a9q8iTOnThAFAAA7"`;
+
+exports[`qr-code renders a text as a TABLE 1`] = `
+<table>
+  <tbody>
+    <tr>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+    </tr>
+    <tr>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+    </tr>
+    <tr>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+    </tr>
+    <tr>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+    </tr>
+    <tr>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+    </tr>
+    <tr>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+    </tr>
+    <tr>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+    </tr>
+    <tr>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+    </tr>
+    <tr>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+    </tr>
+    <tr>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+    </tr>
+    <tr>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+    </tr>
+    <tr>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+    </tr>
+    <tr>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+    </tr>
+    <tr>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+    </tr>
+    <tr>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+    </tr>
+    <tr>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+    </tr>
+    <tr>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+    </tr>
+    <tr>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+    </tr>
+    <tr>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+    </tr>
+    <tr>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+    </tr>
+    <tr>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #ffffff;"></td>
+      <td style="border-width: 0px; border-style: none; border-collapse: collapse; padding: 0px; margin: 0px; width: 2px; height: 2px; background-color: #000000;"></td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`qr-code renders a text as an SVG 1`] = `
+<svg height="58px" preserveAspectRatio="xMinYMin meet" version="1.1" viewBox="0 0 58 58" width="58px" xmlns="http://www.w3.org/2000/svg">
+  <rect cx="0" cy="0" fill="white" height="100%" width="100%"></rect>
+  <path d="M8,8l2,0 0,2 -2,0 0,-2z M10,8l2,0 0,2 -2,0 0,-2z M12,8l2,0 0,2 -2,0 0,-2z M14,8l2,0 0,2 -2,0 0,-2z M16,8l2,0 0,2 -2,0 0,-2z M18,8l2,0 0,2 -2,0 0,-2z M20,8l2,0 0,2 -2,0 0,-2z M26,8l2,0 0,2 -2,0 0,-2z M28,8l2,0 0,2 -2,0 0,-2z M36,8l2,0 0,2 -2,0 0,-2z M38,8l2,0 0,2 -2,0 0,-2z M40,8l2,0 0,2 -2,0 0,-2z M42,8l2,0 0,2 -2,0 0,-2z M44,8l2,0 0,2 -2,0 0,-2z M46,8l2,0 0,2 -2,0 0,-2z M48,8l2,0 0,2 -2,0 0,-2z M8,10l2,0 0,2 -2,0 0,-2z M20,10l2,0 0,2 -2,0 0,-2z M24,10l2,0 0,2 -2,0 0,-2z M28,10l2,0 0,2 -2,0 0,-2z M30,10l2,0 0,2 -2,0 0,-2z M36,10l2,0 0,2 -2,0 0,-2z M48,10l2,0 0,2 -2,0 0,-2z M8,12l2,0 0,2 -2,0 0,-2z M12,12l2,0 0,2 -2,0 0,-2z M14,12l2,0 0,2 -2,0 0,-2z M16,12l2,0 0,2 -2,0 0,-2z M20,12l2,0 0,2 -2,0 0,-2z M26,12l2,0 0,2 -2,0 0,-2z M28,12l2,0 0,2 -2,0 0,-2z M32,12l2,0 0,2 -2,0 0,-2z M36,12l2,0 0,2 -2,0 0,-2z M40,12l2,0 0,2 -2,0 0,-2z M42,12l2,0 0,2 -2,0 0,-2z M44,12l2,0 0,2 -2,0 0,-2z M48,12l2,0 0,2 -2,0 0,-2z M8,14l2,0 0,2 -2,0 0,-2z M12,14l2,0 0,2 -2,0 0,-2z M14,14l2,0 0,2 -2,0 0,-2z M16,14l2,0 0,2 -2,0 0,-2z M20,14l2,0 0,2 -2,0 0,-2z M28,14l2,0 0,2 -2,0 0,-2z M30,14l2,0 0,2 -2,0 0,-2z M36,14l2,0 0,2 -2,0 0,-2z M40,14l2,0 0,2 -2,0 0,-2z M42,14l2,0 0,2 -2,0 0,-2z M44,14l2,0 0,2 -2,0 0,-2z M48,14l2,0 0,2 -2,0 0,-2z M8,16l2,0 0,2 -2,0 0,-2z M12,16l2,0 0,2 -2,0 0,-2z M14,16l2,0 0,2 -2,0 0,-2z M16,16l2,0 0,2 -2,0 0,-2z M20,16l2,0 0,2 -2,0 0,-2z M28,16l2,0 0,2 -2,0 0,-2z M36,16l2,0 0,2 -2,0 0,-2z M40,16l2,0 0,2 -2,0 0,-2z M42,16l2,0 0,2 -2,0 0,-2z M44,16l2,0 0,2 -2,0 0,-2z M48,16l2,0 0,2 -2,0 0,-2z M8,18l2,0 0,2 -2,0 0,-2z M20,18l2,0 0,2 -2,0 0,-2z M24,18l2,0 0,2 -2,0 0,-2z M28,18l2,0 0,2 -2,0 0,-2z M32,18l2,0 0,2 -2,0 0,-2z M36,18l2,0 0,2 -2,0 0,-2z M48,18l2,0 0,2 -2,0 0,-2z M8,20l2,0 0,2 -2,0 0,-2z M10,20l2,0 0,2 -2,0 0,-2z M12,20l2,0 0,2 -2,0 0,-2z M14,20l2,0 0,2 -2,0 0,-2z M16,20l2,0 0,2 -2,0 0,-2z M18,20l2,0 0,2 -2,0 0,-2z M20,20l2,0 0,2 -2,0 0,-2z M24,20l2,0 0,2 -2,0 0,-2z M28,20l2,0 0,2 -2,0 0,-2z M32,20l2,0 0,2 -2,0 0,-2z M36,20l2,0 0,2 -2,0 0,-2z M38,20l2,0 0,2 -2,0 0,-2z M40,20l2,0 0,2 -2,0 0,-2z M42,20l2,0 0,2 -2,0 0,-2z M44,20l2,0 0,2 -2,0 0,-2z M46,20l2,0 0,2 -2,0 0,-2z M48,20l2,0 0,2 -2,0 0,-2z M24,22l2,0 0,2 -2,0 0,-2z M28,22l2,0 0,2 -2,0 0,-2z M16,24l2,0 0,2 -2,0 0,-2z M18,24l2,0 0,2 -2,0 0,-2z M20,24l2,0 0,2 -2,0 0,-2z M22,24l2,0 0,2 -2,0 0,-2z M30,24l2,0 0,2 -2,0 0,-2z M32,24l2,0 0,2 -2,0 0,-2z M36,24l2,0 0,2 -2,0 0,-2z M38,24l2,0 0,2 -2,0 0,-2z M46,24l2,0 0,2 -2,0 0,-2z M8,26l2,0 0,2 -2,0 0,-2z M10,26l2,0 0,2 -2,0 0,-2z M12,26l2,0 0,2 -2,0 0,-2z M14,26l2,0 0,2 -2,0 0,-2z M16,26l2,0 0,2 -2,0 0,-2z M24,26l2,0 0,2 -2,0 0,-2z M28,26l2,0 0,2 -2,0 0,-2z M30,26l2,0 0,2 -2,0 0,-2z M34,26l2,0 0,2 -2,0 0,-2z M36,26l2,0 0,2 -2,0 0,-2z M42,26l2,0 0,2 -2,0 0,-2z M44,26l2,0 0,2 -2,0 0,-2z M46,26l2,0 0,2 -2,0 0,-2z M48,26l2,0 0,2 -2,0 0,-2z M10,28l2,0 0,2 -2,0 0,-2z M14,28l2,0 0,2 -2,0 0,-2z M18,28l2,0 0,2 -2,0 0,-2z M20,28l2,0 0,2 -2,0 0,-2z M22,28l2,0 0,2 -2,0 0,-2z M24,28l2,0 0,2 -2,0 0,-2z M26,28l2,0 0,2 -2,0 0,-2z M28,28l2,0 0,2 -2,0 0,-2z M32,28l2,0 0,2 -2,0 0,-2z M36,28l2,0 0,2 -2,0 0,-2z M46,28l2,0 0,2 -2,0 0,-2z M12,30l2,0 0,2 -2,0 0,-2z M14,30l2,0 0,2 -2,0 0,-2z M16,30l2,0 0,2 -2,0 0,-2z M22,30l2,0 0,2 -2,0 0,-2z M28,30l2,0 0,2 -2,0 0,-2z M30,30l2,0 0,2 -2,0 0,-2z M32,30l2,0 0,2 -2,0 0,-2z M36,30l2,0 0,2 -2,0 0,-2z M38,30l2,0 0,2 -2,0 0,-2z M10,32l2,0 0,2 -2,0 0,-2z M12,32l2,0 0,2 -2,0 0,-2z M14,32l2,0 0,2 -2,0 0,-2z M20,32l2,0 0,2 -2,0 0,-2z M22,32l2,0 0,2 -2,0 0,-2z M26,32l2,0 0,2 -2,0 0,-2z M32,32l2,0 0,2 -2,0 0,-2z M36,32l2,0 0,2 -2,0 0,-2z M38,32l2,0 0,2 -2,0 0,-2z M40,32l2,0 0,2 -2,0 0,-2z M42,32l2,0 0,2 -2,0 0,-2z M44,32l2,0 0,2 -2,0 0,-2z M48,32l2,0 0,2 -2,0 0,-2z M24,34l2,0 0,2 -2,0 0,-2z M28,34l2,0 0,2 -2,0 0,-2z M30,34l2,0 0,2 -2,0 0,-2z M32,34l2,0 0,2 -2,0 0,-2z M34,34l2,0 0,2 -2,0 0,-2z M36,34l2,0 0,2 -2,0 0,-2z M38,34l2,0 0,2 -2,0 0,-2z M44,34l2,0 0,2 -2,0 0,-2z M48,34l2,0 0,2 -2,0 0,-2z M8,36l2,0 0,2 -2,0 0,-2z M10,36l2,0 0,2 -2,0 0,-2z M12,36l2,0 0,2 -2,0 0,-2z M14,36l2,0 0,2 -2,0 0,-2z M16,36l2,0 0,2 -2,0 0,-2z M18,36l2,0 0,2 -2,0 0,-2z M20,36l2,0 0,2 -2,0 0,-2z M24,36l2,0 0,2 -2,0 0,-2z M28,36l2,0 0,2 -2,0 0,-2z M36,36l2,0 0,2 -2,0 0,-2z M38,36l2,0 0,2 -2,0 0,-2z M40,36l2,0 0,2 -2,0 0,-2z M44,36l2,0 0,2 -2,0 0,-2z M46,36l2,0 0,2 -2,0 0,-2z M8,38l2,0 0,2 -2,0 0,-2z M20,38l2,0 0,2 -2,0 0,-2z M24,38l2,0 0,2 -2,0 0,-2z M26,38l2,0 0,2 -2,0 0,-2z M30,38l2,0 0,2 -2,0 0,-2z M32,38l2,0 0,2 -2,0 0,-2z M36,38l2,0 0,2 -2,0 0,-2z M40,38l2,0 0,2 -2,0 0,-2z M8,40l2,0 0,2 -2,0 0,-2z M12,40l2,0 0,2 -2,0 0,-2z M14,40l2,0 0,2 -2,0 0,-2z M16,40l2,0 0,2 -2,0 0,-2z M20,40l2,0 0,2 -2,0 0,-2z M24,40l2,0 0,2 -2,0 0,-2z M26,40l2,0 0,2 -2,0 0,-2z M32,40l2,0 0,2 -2,0 0,-2z M34,40l2,0 0,2 -2,0 0,-2z M36,40l2,0 0,2 -2,0 0,-2z M42,40l2,0 0,2 -2,0 0,-2z M44,40l2,0 0,2 -2,0 0,-2z M48,40l2,0 0,2 -2,0 0,-2z M8,42l2,0 0,2 -2,0 0,-2z M12,42l2,0 0,2 -2,0 0,-2z M14,42l2,0 0,2 -2,0 0,-2z M16,42l2,0 0,2 -2,0 0,-2z M20,42l2,0 0,2 -2,0 0,-2z M26,42l2,0 0,2 -2,0 0,-2z M36,42l2,0 0,2 -2,0 0,-2z M42,42l2,0 0,2 -2,0 0,-2z M44,42l2,0 0,2 -2,0 0,-2z M46,42l2,0 0,2 -2,0 0,-2z M48,42l2,0 0,2 -2,0 0,-2z M8,44l2,0 0,2 -2,0 0,-2z M12,44l2,0 0,2 -2,0 0,-2z M14,44l2,0 0,2 -2,0 0,-2z M16,44l2,0 0,2 -2,0 0,-2z M20,44l2,0 0,2 -2,0 0,-2z M26,44l2,0 0,2 -2,0 0,-2z M32,44l2,0 0,2 -2,0 0,-2z M34,44l2,0 0,2 -2,0 0,-2z M42,44l2,0 0,2 -2,0 0,-2z M8,46l2,0 0,2 -2,0 0,-2z M20,46l2,0 0,2 -2,0 0,-2z M26,46l2,0 0,2 -2,0 0,-2z M30,46l2,0 0,2 -2,0 0,-2z M34,46l2,0 0,2 -2,0 0,-2z M36,46l2,0 0,2 -2,0 0,-2z M38,46l2,0 0,2 -2,0 0,-2z M42,46l2,0 0,2 -2,0 0,-2z M8,48l2,0 0,2 -2,0 0,-2z M10,48l2,0 0,2 -2,0 0,-2z M12,48l2,0 0,2 -2,0 0,-2z M14,48l2,0 0,2 -2,0 0,-2z M16,48l2,0 0,2 -2,0 0,-2z M18,48l2,0 0,2 -2,0 0,-2z M20,48l2,0 0,2 -2,0 0,-2z M26,48l2,0 0,2 -2,0 0,-2z M32,48l2,0 0,2 -2,0 0,-2z M38,48l2,0 0,2 -2,0 0,-2z M40,48l2,0 0,2 -2,0 0,-2z M44,48l2,0 0,2 -2,0 0,-2z M48,48l2,0 0,2 -2,0 0,-2z " fill="black" stroke="transparent"></path>
+</svg>
 `;
