@@ -23,7 +23,12 @@ export const config: Config = {
     },
     {
       type: 'www',
-      ...baseUrlExceptIfTesting
+      ...baseUrlExceptIfTesting,
+      serviceWorker: {
+        globPatterns: [
+          '**/*.{js,css,json,html,ico,png}'
+        ]
+      }
     }
   ],
   plugins: [
