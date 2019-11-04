@@ -70,17 +70,14 @@ Big thanks to [Samuel Mortenson (@mortenson)](https://github.com/mortenson) and 
 
 There is now a [Gist](https://gist.github.com/mortenson/044f30bea778f4e98e4e14c661aa7d9a).
 
-## PWA
+## 💯PWA
 
 The GitHub Page was a PWA.
 
-LightHouse score at one point was:
+Last time I checked, LightHouse score was:
 
-- PWA: 100
-- Performance: 100
-- Accessibility: 87
-- Best Practices: 100
-- SEO: 100
+![lighthouse-score](lighthouse-score.png)
+
 
 Now LightHouse Bot is watching this in every Pull Request.
 
