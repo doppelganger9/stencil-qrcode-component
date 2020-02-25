@@ -25,7 +25,7 @@
     "@stencil/core": "1.8.9",
     "@stencil/sass": "1.1.1",
     "@types/jest": "24.9.1",
-    "@types/puppeteer": "1.20.3",
+    "@types/puppeteer": "1.20.4",
     "gh-pages": "2.2.0",
     "jest": "24.9.0",
     "jest-cli": "24.9.0",
