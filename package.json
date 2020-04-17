@@ -31,7 +31,7 @@
     "jest-cli": "24.9.0",
     "jest-environment-node": "24.9.0",
     "lighthousebot": "git+https://github.com/GoogleChromeLabs/lighthousebot.git",
-    "pixelmatch": "5.1.0",
+    "pixelmatch": "5.2.0",
     "puppeteer": "1.20.0",
     "rebase": "0.3.0",
     "workbox-build": "4.3.1"
