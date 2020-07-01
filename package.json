@@ -32,7 +32,7 @@
     "jest-environment-node": "24.9.0",
     "lighthousebot": "git+https://github.com/GoogleChromeLabs/lighthousebot.git",
     "pixelmatch": "5.2.1",
-    "puppeteer": "1.20.0",
+    "puppeteer": "4.0.1",
     "rebase": "0.3.0",
     "workbox-build": "4.3.1"
   },
