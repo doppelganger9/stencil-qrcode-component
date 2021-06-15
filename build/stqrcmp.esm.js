@@ -1,0 +1,1 @@
+import{b as o}from"./p-233a97d2.js";import{p as r}from"./p-10fb8abc.js";r().then(r=>o([["p-d13aee43",[[1,"qr-code",{contents:[1],errorCorrectionLevel:[1,"error-correction-level"],margin:[2],scale:[2],colorDark:[1,"color-dark"],colorLight:[1,"color-light"],outputMode:[1,"output-mode"],data:[32]}]]]],r));
