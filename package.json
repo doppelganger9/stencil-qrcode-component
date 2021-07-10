@@ -34,7 +34,7 @@
     "pixelmatch": "5.2.1",
     "puppeteer": "1.20.0",
     "rebase": "0.3.0",
-    "workbox-build": "4.3.1"
+    "workbox-build": "6.1.5"
   },
   "repository": {
     "type": "git",
