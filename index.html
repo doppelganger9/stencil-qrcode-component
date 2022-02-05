@@ -1,9 +1,12 @@
-<!doctype html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <link rel="icon" type="images/png" href="assets/favicon.png"> <link rel="manifest" href="manifest.json"> <meta name="description" content="QRCode Stencil Sample by Doppelganger9. Also a PWA."> <meta name="theme-color" content="#000"> <meta name="mobile-web-app-capable" content="yes"> <meta name="apple-mobile-web-app-capable" content="yes"> <meta name="application-name" content="qrcode-stencil-sample"> <meta name="apple-mobile-web-app-title" content="qrcode-stencil-sample"> <meta name="msapplication-starturl" content="https://doppelganger9.github.io/stencil-qrcode-component/"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <link rel="icon" type="images/png" sizes="216x216" href="assets/favicon.png"> <link rel="apple-touch-icon" type="images/png" sizes="216x216" href="assets/favicon.png"> <title>Stencil QRCode Component</title> <script type="module" src="build/stqrcmp.esm.js"></script> <script nomodule="" src="build/stqrcmp.js"></script> <script>
+<!doctype html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <link rel="icon" type="images/png" href="assets/favicon.png"> <link rel="manifest" href="manifest.json"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'report-sample' 'self' 'sha256-7xelfedyXZ52Vi8+xE7nnZQGPPdbH2aFvZElToAINc0=' 'sha256-YTOaIjjXcAM2GUhpTjSY8nxitrbihRdD7v+8Qe89IBI='; style-src https://cdn.rawgit.com https://cdn.jsdelivr.net 'report-sample' 'self' 'unsafe-inline'; object-src 'none'; base-uri 'self'; connect-src 'self'; font-src 'self'; frame-src 'self'; img-src 'self' https://s3.amazonaws.com data:; manifest-src 'self'; media-src 'self'; worker-src 'none';"> <meta name="description" content="QRCode Stencil Sample by Doppelganger9. Also a PWA."> <meta name="theme-color" content="#000"> <meta name="mobile-web-app-capable" content="yes"> <meta name="apple-mobile-web-app-capable" content="yes"> <meta name="application-name" content="qrcode-stencil-sample"> <meta name="apple-mobile-web-app-title" content="qrcode-stencil-sample"> <meta name="msapplication-starturl" content="https://doppelganger9.github.io/stencil-qrcode-component/"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <link rel="icon" type="images/png" sizes="216x216" href="assets/favicon.png"> <link rel="apple-touch-icon" type="images/png" sizes="216x216" href="assets/favicon.png"> <title>Stencil QRCode Component</title> <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css"> <script type="module" src="build/stqrcmp.esm.js"></script> <script nomodule="" src="build/stqrcmp.js"></script> <script>
     // For demo purposes, to show usage of props change
     const refresh = () => Array.from(document.getElementsByTagName('qr-code')).map(e => {
         e.contents = document.getElementById('dyn_content').value
     });
-  </script> <style>/* sample styling override to add a border with rounded corner */
+  </script> <style>qr-code {
+      margin: 20px;
+    }
+    /* sample styling override to add a border with rounded corner */
     .with-rounded-corners {
         border: 3px solid black;
         border-radius:10px;
@@ -18,7 +21,7 @@
       width: 150px;
       margin: 10px;
       padding: 10px;
-    }</style> </head> <body><h1>QR Code web-component demo</h1> <p>Sample web-component made with <a href="https://stenciljs.com">Stencil</a></p> <a href="https://github.com/doppelganger9/stencil-qrcode-component"> <img src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" style="position: absolute; top: 0; right: 0; border: 0;"> </a> <label for="dyn_content">Change the contents of the QR Code here :</label> <input name="dyn_content" id="dyn_content" type="text" value="Hello World" aria-label="QR Code content input" onblur="refresh();" onchange="refresh();" onkeyup="refresh();"> <h2>DataURI QR Code</h2> <pre>&lt;qr-code
+    }</style> </head> <body><h1>QR Code web-component demo</h1> <p>Sample web-component made with <a href="https://stenciljs.com">Stencil</a></p> <a href="https://github.com/doppelganger9/stencil-qrcode-component"> <img src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub" style="position: absolute; top: 0; right: 0; border: 0;"> </a> <label for="dyn_content">Change the contents of the QR Code here :</label> <input name="dyn_content" id="dyn_content" type="text" value="Hello World" aria-label="QR Code content input" onblur="refresh();" onchange="refresh();" onkeyup="refresh();"> <h2>DataURI QR Code</h2> <pre>&lt;qr-code
   contents="Hello World"
   <b>output-mode="DataURI"</b>
   style="width: 100px;height: 100px;"&gt;
@@ -31,7 +34,7 @@
   contents="Hello World"
   <b>output-mode="Table"</b>
   style="width: 100px;height: 100px;"&gt;
-&lt;/qr-code&gt;</pre> <qr-code contents="Hello World" output-mode="Table" style="width: 100px; height: 100px;"></qr-code> <script data-build="2022-02-05T14:17:25">
+&lt;/qr-code&gt;</pre> <qr-code contents="Hello World" output-mode="Table" style="width: 100px; height: 100px;"></qr-code> <script data-build="2022-02-05T14:45:57">
 if ('serviceWorker' in navigator && location.protocol !== 'file:') {
   window.addEventListener('load', function() {
   navigator.serviceWorker.register('/stencil-qrcode-component/sw.js')
