@@ -5,6 +5,7 @@
   <link rel="icon" type="images/png" href="assets/favicon.png">
 
   <link rel="manifest" href="manifest.json">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'report-sample' 'self' 'sha256-7xelfedyXZ52Vi8+xE7nnZQGPPdbH2aFvZElToAINc0=' 'sha256-YTOaIjjXcAM2GUhpTjSY8nxitrbihRdD7v+8Qe89IBI='; style-src https://cdn.rawgit.com https://cdn.jsdelivr.net 'report-sample' 'self' 'unsafe-inline'; object-src 'none'; base-uri 'self'; connect-src 'self'; font-src 'self'; frame-src 'self'; img-src 'self' https://s3.amazonaws.com data:; manifest-src 'self'; media-src 'self'; worker-src 'none';">
   <meta name="description" content="QRCode Stencil Sample by Doppelganger9. Also a PWA.">
   <meta name="theme-color" content="#000">
   <meta name="mobile-web-app-capable" content="yes">
@@ -18,6 +19,7 @@
   <link rel="apple-touch-icon" type="images/png" sizes="216x216" href="assets/favicon.png">
 
   <title>Stencil QRCode Component</title>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
   <script type="module" src="build/stqrcmp.esm.js"></script>
   <script nomodule src="build/stqrcmp.js"></script>
   <script>
@@ -27,6 +29,9 @@
     });
   </script>
   <style>
+    qr-code {
+      margin: 20px;
+    }
     /* sample styling override to add a border with rounded corner */
     .with-rounded-corners {
         border: 3px solid black;
@@ -50,8 +55,7 @@
   <h1>QR Code web-component demo</h1>
   <p>Sample web-component made with <a href="https://stenciljs.com">Stencil</a></p>
   <a href="https://github.com/doppelganger9/stencil-qrcode-component">
-    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67"
-      alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub">
   </a>
   <label for="dyn_content">Change the contents of the QR Code here :</label>
   <input name="dyn_content" id="dyn_content" type="text" value="Hello World" aria-label="QR Code content input"
