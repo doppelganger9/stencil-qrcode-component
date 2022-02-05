@@ -3,6 +3,7 @@ name: Build, Test & Publish to GitHub Pages
 on:
   push:
     branches: [ master ]
+  pull_request:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -35,8 +36,9 @@ jobs:
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
 
-      - name: Publish to GitHub Pages
+      - name: Publish to GitHub Pages (if triggered from master)
         uses: JamesIves/github-pages-deploy-action@v4.2.3
+        if: github.ref == 'refs/heads/master'
         with:
           branch: gh-pages
           folder: www/stencil-qrcode-component
