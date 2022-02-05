@@ -66,8 +66,7 @@ Last time I checked, LightHouse score was:
 
 ![lighthouse-score](lighthouse-score.png)
 
-
-Now LightHouse Bot is watching this in every Pull Request.
+Now LightHouse CI is watching this in every Pull Request.
 
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdoppelganger9%2Fstencil-qrcode-component.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdoppelganger9%2Fstencil-qrcode-component?ref=badge_large)
