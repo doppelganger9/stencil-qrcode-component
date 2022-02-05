@@ -60,13 +60,13 @@ This project uses [qrcode-generator](https://www.npmjs.com/package/qrcode-genera
 
 ## 💯PWA
 
-The GitHub Page was a PWA.
+The GitHub Page is a PWA.
 
-Last time I checked, LightHouse score was:
+Last time I checked (2022-02-05), LightHouse score was:
 
 ![lighthouse-score](lighthouse-score.png)
 
-Now LightHouse CI is watching this in every Pull Request.
+LightHouse CI is run in the GitHub Action workflow.
 
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdoppelganger9%2Fstencil-qrcode-component.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdoppelganger9%2Fstencil-qrcode-component?ref=badge_large)
