@@ -52,23 +52,11 @@ npm test
 
 Need help? Check out Stencil docs [here](https://stenciljs.com/docs/my-first-component).
 
-To update & publish on your project's GitHub Pages, run:
-```bash
-npm run prepare
-npm run publish-docs
-```
+To update & publish on your project's GitHub Pages, see the related Github Actions workflow inn `.github/workflow`.
 
 ## QR Code library
 
 This project uses [qrcode-generator](https://www.npmjs.com/package/qrcode-generator) to generate the image (dataURI, SVG or Table) of the QR Code.
-
-## GitHub Pages
-
-See [the live demo GitHub Pages](https://doppelganger9.github.io/stencil-qrcode-component/).
-
-Big thanks to [Samuel Mortenson (@mortenson)](https://github.com/mortenson) and its [Ame Components](https://github.com/mortenson/ame-components) for automating the Github Page publishing!
-
-There is now a [Gist](https://gist.github.com/mortenson/044f30bea778f4e98e4e14c661aa7d9a).
 
 ## 💯PWA
 
@@ -78,8 +66,7 @@ Last time I checked, LightHouse score was:
 
 ![lighthouse-score](lighthouse-score.png)
 
-
-Now LightHouse Bot is watching this in every Pull Request.
+Now LightHouse CI is watching this in every Pull Request.
 
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdoppelganger9%2Fstencil-qrcode-component.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdoppelganger9%2Fstencil-qrcode-component?ref=badge_large)
