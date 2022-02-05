@@ -1,10 +1,6 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Build, Test & Publish to GitHub Pages
 
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: [ master ]
 
@@ -26,15 +22,18 @@ jobs:
       - name: Install
         run: |
           npm ci
-          npm install -g @lhci/cli@0.8.x
-
+ 
       - name: Test and Build
         run: |
           npm run test
           npm run prepare
       
-      - name: Rub LightHouse on deployed site
-        run: lhci autorun
+      - name: Run LightHouse on static site
+        run: |
+          npm install -g @lhci/cli@0.8.x
+          lhci autorun
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
 
       - name: Publish to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.2.3
