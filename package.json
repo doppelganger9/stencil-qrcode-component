@@ -29,7 +29,7 @@
     "jest-environment-node": "27.5.1",
     "pixelmatch": "5.2.1",
     "puppeteer": "13.4.1",
-    "workbox-build": "6.5.0"
+    "workbox-build": "6.5.1"
   },
   "repository": {
     "type": "git",
