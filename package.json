@@ -17,6 +17,8 @@
     "prepare": "npm run build"
   },
   "dependencies": {
+    "@capacitor/cli": "4.2.0",
+    "@capacitor/core": "4.2.0",
     "qrcode-generator": "1.4.4"
   },
   "devDependencies": {
