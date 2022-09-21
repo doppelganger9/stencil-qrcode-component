@@ -68,5 +68,9 @@ Last time I checked (2022-02-05), LightHouse score was:
 
 LightHouse CI is run in the GitHub Action workflow.
 
+## Sample mobile app with Capacitor
+
+I used this project to showcase how to reuse a built website into an hybrid cross-platform native application. See [this Pull Request](https://github.com/doppelganger9/stencil-qrcode-component/pull/212).
+
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdoppelganger9%2Fstencil-qrcode-component.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdoppelganger9%2Fstencil-qrcode-component?ref=badge_large)
