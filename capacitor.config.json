@@ -1,0 +1,6 @@
+{
+  "appId": "fr.doppelganger.qrcode",
+  "appName": "qrcode-cmp-app",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}

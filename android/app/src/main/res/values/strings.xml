@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">qrcode-cmp-app</string>
+    <string name="title_activity_main">qrcode-cmp-app</string>
+    <string name="package_name">fr.doppelganger.qrcode</string>
+    <string name="custom_url_scheme">fr.doppelganger.qrcode</string>
+</resources>
