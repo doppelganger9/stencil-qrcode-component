@@ -24,3 +24,15 @@ UserInterfaceState.xcuserstate
 
 src/assets/node-qrcode
 .npmrc
+
+www/*
+
+android/.gradle/
+android/app/src/main/assets/public/
+android/app/build/
+
+ios/DerivedData/
+ios/App/App/public/
+ios/App/DerivedData/
+ios/App/App.xcodeproj/xcuserdata/
+
