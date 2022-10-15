@@ -23,7 +23,7 @@
     "@stencil/core": "2.18.1",
     "@stencil/sass": "1.5.2",
     "@types/jest": "27.5.2",
-    "@types/puppeteer": "5.4.6",
+    "@types/puppeteer": "5.4.7",
     "jest": "27.5.1",
     "jest-cli": "27.5.1",
     "jest-environment-node": "27.5.1",
