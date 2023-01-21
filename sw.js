@@ -1,2 +1,63 @@
-if(!self.define){let e,s={};const i=(i,n)=>(i=new URL(i+".js",n).href,s[i]||new Promise((s=>{if("document"in self){const e=document.createElement("script");e.src=i,e.onload=s,document.head.appendChild(e)}else e=i,importScripts(i),s()})).then((()=>{let e=s[i];if(!e)throw new Error(`Module ${i} didn’t register its module`);return e})));self.define=(n,r)=>{const d=e||("document"in self?document.currentScript.src:"")||location.href;if(s[d])return;let o={};const c=e=>i(e,d),t={module:{uri:d},exports:o,require:c};s[d]=Promise.all(n.map((e=>t[e]||c(e)))).then((e=>(r(...e),o)))}}define(["./workbox-6da860f9"],(function(e){"use strict";self.addEventListener("message",(e=>{e.data&&"SKIP_WAITING"===e.data.type&&self.skipWaiting()})),e.precacheAndRoute([{url:"assets/favicon.png",revision:"786ac537ab37ad6e8662dd2549b6817b"},{url:"assets/icon-192.png",revision:"f2a6b449d9ad1adbe5fcd82eeaa25dc4"},{url:"assets/icon-512.png",revision:"167497489a9d3f751fbabcd8239d4872"},{url:"assets/icon-719.png",revision:"4bebfa0959bc92f9ba36051768392c0d"},{url:"build/index.esm.js",revision:"d41d8cd98f00b204e9800998ecf8427e"},{url:"build/p-68de3375.entry.js",revision:null},{url:"build/p-bf140d43.js",revision:null},{url:"index.html",revision:"a0bed92c48e0c6dacdc77823997305f4"},{url:"manifest.json",revision:"4f1693cee61aeb94422d419cfc88d54a"}],{})}));
-//# sourceMappingURL=sw.js.map
+/**
+ * Welcome to your Workbox-powered service worker!
+ *
+ * You'll need to register this file in your web app and you should
+ * disable HTTP caching for this file too.
+ * See https://goo.gl/nhQhGp
+ *
+ * The rest of the code is auto-generated. Please don't update this file
+ * directly; instead, make changes to your Workbox build configuration
+ * and re-run your build process.
+ * See https://goo.gl/2aRDsh
+ */
+
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+});
+
+/**
+ * The workboxSW.precacheAndRoute() method efficiently caches and responds to
+ * requests for URLs in the manifest.
+ * See https://goo.gl/S9QRab
+ */
+self.__precacheManifest = [
+  {
+    "url": "assets/favicon.png",
+    "revision": "786ac537ab37ad6e8662dd2549b6817b"
+  },
+  {
+    "url": "assets/icon-192.png",
+    "revision": "f2a6b449d9ad1adbe5fcd82eeaa25dc4"
+  },
+  {
+    "url": "assets/icon-512.png",
+    "revision": "167497489a9d3f751fbabcd8239d4872"
+  },
+  {
+    "url": "assets/icon-719.png",
+    "revision": "4bebfa0959bc92f9ba36051768392c0d"
+  },
+  {
+    "url": "build/index.esm.js",
+    "revision": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "url": "build/p-078926ac.entry.js"
+  },
+  {
+    "url": "build/p-d18b7482.js"
+  },
+  {
+    "url": "index.html",
+    "revision": "8f8a7ca38180cc801b940b813c1fe40e"
+  },
+  {
+    "url": "manifest.json",
+    "revision": "4f1693cee61aeb94422d419cfc88d54a"
+  }
+].concat(self.__precacheManifest || []);
+workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
