@@ -30,7 +30,7 @@
     "jest": "^27.4.5",
     "jest-cli": "^27.4.5",
     "puppeteer": "19.6.3",
-    "workbox-build": "4.3.1"
+    "workbox-build": "6.5.4"
   },
   "repository": {
     "type": "git",
