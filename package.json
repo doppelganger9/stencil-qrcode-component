@@ -18,15 +18,27 @@
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@stencil/core": "^3.0.0",
     "qrcode-generator": "1.4.4"
   },
   "devDependencies": {
+    "@babel/core": "7.20.12",
     "@stencil/sass": "2.0.3",
+    "@storybook/addon-actions": "6.5.16",
+    "@storybook/addon-essentials": "6.5.16",
+    "@storybook/addon-interactions": "6.5.16",
+    "@storybook/addon-links": "6.5.16",
+    "@storybook/builder-webpack4": "6.5.16",
+    "@storybook/html": "6.5.16",
+    "@storybook/manager-webpack4": "6.5.16",
+    "@storybook/testing-library": "0.0.13",
     "@types/jest": "^27.0.3",
+    "babel-loader": "8.3.0",
     "jest": "^27.4.5",
     "jest-cli": "^27.4.5",
     "puppeteer": "19.6.3",
