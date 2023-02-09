@@ -1,0 +1,67 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import { OutputMode } from "../../components/qr-code/enums";
+
+<Meta title="Components/QR-Code"
+  argTypes={{
+    contents: { control: 'text' },
+    outputMode: {
+      options: [ OutputMode.DataURI, OutputMode.SVG, OutputMode.Table ],
+      type: 'radio'
+    },
+    style: { control: 'text' }
+  }}
+/>
+
+export const DefaultArgs = {
+  contents: 'Hello World',
+  outputMode: OutputMode.DataURI,
+  style: 'width: 100px;height: 100px;'
+};
+
+export const Template = (args) => `<qr-code
+  contents="${args.contents}"
+  output-mode="${args.outputMode}"
+  style="${args.style}">
+  </qr-code>
+`;
+
+# QR-Code
+
+The QR-Code components can be rendered as an `IMG` element with `Data URI` contents:
+
+<Canvas>
+  <Story
+    name="WithDataURI"
+    args={{
+      ...DefaultArgs,
+      outputMode: OutputMode.DataURI,
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+Or it can be rendered using an `SVG` element and contents:
+
+<Canvas>
+  <Story
+    name="WithSVG"
+    args={{
+      ...DefaultArgs,
+      outputMode: OutputMode.SVG,
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+Or it can be rendered using an `TABLE` element and contents:
+
+<Canvas>
+  <Story
+    name="WithTable"
+    args={{
+      ...DefaultArgs,
+      outputMode: OutputMode.Table,
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>

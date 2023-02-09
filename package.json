@@ -30,6 +30,7 @@
     "@babel/core": "7.20.12",
     "@stencil/sass": "2.0.3",
     "@storybook/addon-actions": "6.5.16",
+    "@storybook/addon-docs": "6.5.16",
     "@storybook/addon-essentials": "6.5.16",
     "@storybook/addon-interactions": "6.5.16",
     "@storybook/addon-links": "6.5.16",
@@ -56,7 +57,8 @@
   "homepage": "https://github.com/doppelganger9/stencil-qrcode-component",
   "jest": {
     "transform": {
-      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js",
+      "^.+\\.mdx$": "@storybook/addon-docs/jest-transform-mdx"
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
     "moduleFileExtensions": [
