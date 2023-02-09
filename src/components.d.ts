@@ -6,6 +6,7 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { ErrorCorrectionLevel, OutputMode } from "./components/qr-code/enums";
+export { ErrorCorrectionLevel, OutputMode } from "./components/qr-code/enums";
 export namespace Components {
     interface QrCode {
         "colorDark": string;
