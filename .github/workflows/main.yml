@@ -22,7 +22,7 @@ jobs:
 
       - name: Install
         run: |
-          npm ci
+          npm ci --legacy-peer-deps
  
       - name: Test and Build
         run: |
