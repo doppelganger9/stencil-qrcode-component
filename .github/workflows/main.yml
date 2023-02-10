@@ -29,6 +29,11 @@ jobs:
           npm run test
           npm run prepare
       
+      - name: Build Storybook and move it to www dir
+        run: |
+          npm run build-storybook
+          mv storybook-static/ www/stencil-qrcode-component/storybook/
+      
       - name: Run LightHouse on static site
         run: |
           npm install -g @lhci/cli@0.9.x
