@@ -31,13 +31,12 @@ jobs:
       
       - name: Build Storybook and move it to www dir
         run: |
-          npm run build-storybook
-          mv storybook-static/ www/stencil-qrcode-component/storybook/
+          npm run build-storybook -- -s www/stencil-qrcode-component/storybook/ --quiet
       
       - name: Run LightHouse on static site
         run: |
           npm install -g @lhci/cli@0.9.x
-          lhci autorun
+          lhci autorun --staticDistDir www/stencil-qrcode-component/ --autodiscoverUrlBlocklist /stencil-qrcode-component/storybook/
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
 
