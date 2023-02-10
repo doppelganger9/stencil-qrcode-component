@@ -36,7 +36,7 @@ jobs:
       - name: Run LightHouse on static site
         run: |
           npm install -g @lhci/cli@0.9.x
-          lhci autorun --staticDistDir www/stencil-qrcode-component/ --autodiscoverUrlBlocklist /stencil-qrcode-component/storybook/
+          lhci autorun --staticDistDir www/stencil-qrcode-component/ --autodiscoverUrlBlocklist /storybook/
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
 
