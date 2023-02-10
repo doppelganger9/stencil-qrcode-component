@@ -21,7 +21,7 @@
     "prepare": "npm run build"
   },
   "dependencies": {
-    "@stencil/core": "^2.13.0",
+    "@stencil/core": "^3.0.0",
     "qrcode-generator": "1.4.4"
   },
   "devDependencies": {
