@@ -37,3 +37,5 @@ ios/App/DerivedData/
 ios/App/App.xcodeproj/xcuserdata/
 
 loader/
+
+storybook-static/
