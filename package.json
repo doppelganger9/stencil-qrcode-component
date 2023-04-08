@@ -37,7 +37,7 @@
     "@storybook/builder-webpack4": "6.5.16",
     "@storybook/html": "6.5.16",
     "@storybook/manager-webpack4": "6.5.16",
-    "@storybook/testing-library": "0.0.13",
+    "@storybook/testing-library": "0.1.0",
     "@types/jest": "^27.0.3",
     "babel-loader": "8.3.0",
     "jest": "^27.4.5",
