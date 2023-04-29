@@ -42,7 +42,7 @@
     "babel-loader": "8.3.0",
     "jest": "^27.4.5",
     "jest-cli": "^27.4.5",
-    "puppeteer": "19.10.1",
+    "puppeteer": "19.11.1",
     "workbox-build": "6.5.4"
   },
   "repository": {
