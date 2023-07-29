@@ -23,7 +23,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@stencil/core": "^3.0.0",
+    "@stencil/core": "^4.0.0",
     "qrcode-generator": "1.4.4"
   },
   "devDependencies": {
