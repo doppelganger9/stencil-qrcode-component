@@ -40,7 +40,7 @@
     "@storybook/testing-library": "0.2.0",
     "@types/jest": "^27.0.3",
     "babel-loader": "8.3.0",
-    "jest": "^27.4.5",
+    "jest": "^29.0.0",
     "jest-cli": "^27.4.5",
     "puppeteer": "19.11.1",
     "workbox-build": "6.6.0"
