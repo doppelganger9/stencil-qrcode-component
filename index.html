@@ -34,20 +34,20 @@
   contents="Hello World"
   <b>output-mode="Table"</b>
   style="width: 100px;height: 100px;"&gt;
-&lt;/qr-code&gt;</pre> <qr-code contents="Hello World" output-mode="Table" style="width: 100px; height: 100px;"></qr-code> <script data-build="2023-12-02T07:32:34">
+&lt;/qr-code&gt;</pre> <qr-code contents="Hello World" output-mode="Table" style="width: 100px; height: 100px;"></qr-code> <script data-build="2023-12-02T10:37:25">
 if ('serviceWorker' in navigator && location.protocol !== 'file:') {
   window.addEventListener('load', function() {
-  navigator.serviceWorker.register('/stencil-qrcode-component/sw.js')
-    .then(function(reg) {
-    reg.onupdatefound = function() {
-      var installingWorker = reg.installing;
-      installingWorker.onstatechange = function() {
-      if (installingWorker.state === 'installed') {
-        window.dispatchEvent(new Event('swUpdate'))
-      }
-      }
-    }
-    })
-    .catch(function(err) { console.error('service worker error', err) });
+    navigator.serviceWorker.register('/stencil-qrcode-component/sw.js')
+      .then(function(reg) {
+        reg.onupdatefound = function() {
+          var installingWorker = reg.installing;
+          installingWorker.onstatechange = function() {
+            if (installingWorker.state === 'installed') {
+              window.dispatchEvent(new Event('swUpdate'))
+            }
+          }
+        }
+      })
+      .catch(function(err) { console.error('service worker error', err) });
   });
 }</script></body></html>
