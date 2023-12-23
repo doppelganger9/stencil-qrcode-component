@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.23.6",
-    "@stencil/sass": "3.0.7",
+    "@stencil/sass": "3.0.8",
     "@storybook/addon-actions": "6.5.16",
     "@storybook/addon-docs": "6.5.16",
     "@storybook/addon-essentials": "6.5.16",
