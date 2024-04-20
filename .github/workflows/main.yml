@@ -41,7 +41,7 @@ jobs:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
 
       - name: Publish to GitHub Pages (if triggered from master)
-        uses: JamesIves/github-pages-deploy-action@v4.5.0
+        uses: JamesIves/github-pages-deploy-action@v4.6.0
         if: github.ref == 'refs/heads/master'
         with:
           branch: gh-pages
