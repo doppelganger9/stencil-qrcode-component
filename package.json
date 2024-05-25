@@ -27,7 +27,7 @@
     "qrcode-generator": "1.4.4"
   },
   "devDependencies": {
-    "@babel/core": "7.24.5",
+    "@babel/core": "7.24.6",
     "@stencil/sass": "3.0.12",
     "@storybook/addon-actions": "6.5.16",
     "@storybook/addon-docs": "6.5.16",
