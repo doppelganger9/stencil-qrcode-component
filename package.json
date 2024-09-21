@@ -39,7 +39,7 @@
     "@storybook/manager-webpack4": "6.5.16",
     "@storybook/testing-library": "0.2.2",
     "@types/jest": "^27.0.3",
-    "babel-loader": "8.4.1",
+    "babel-loader": "9.2.1",
     "jest": "^27.4.5",
     "jest-cli": "^27.4.5",
     "puppeteer": "19.11.1",
